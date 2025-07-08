@@ -1,6 +1,4 @@
-<h1 align='center'>Marketing Campaigns A/B Testing – Fashion Retail Case Study</h1>
-
-
+<h1 align='center'>Marketing Campaigns A/B Testing | Fashion Retail Case Study</h1>
 
 This project uses A/B testing techniques in Python to determine which marketing campaign is most effective in driving product sales. The analysis evaluates and compares the impact of three different promotional strategies launched across randomly selected outlets of a fashion retail company.
 
