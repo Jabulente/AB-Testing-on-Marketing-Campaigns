@@ -15,9 +15,8 @@ A fashion retail company is preparing to launch a new product as part of its app
 The key objectives of this project are:
 
 1. **Compare the effectiveness** of three marketing campaigns (Campaign 1, Campaign 2, Campaign 3) using statistical analysis.
-2. **Analyze weekly sales performance** across different market sizes and outlet characteristics.
-3. **Identify statistically significant differences** in sales using appropriate A/B testing techniques.
-4. **Visualize key trends and insights** to support decision-making for campaign selection.
+2. **Identify statistically significant differences** in sales using appropriate A/B testing techniques.
+3. **Visualize key trends and insights** to support decision-making for campaign selection.
 
 ---
 
@@ -29,7 +28,7 @@ The dataset consists of **548 observations** and the following features:
 | ---------------- | ------------------------------------------------------------------------------------- |
 | `OutletID`       | Unique identifier for store location (total of 137 outlets).                          |
 | `Market Size`    | Categorical variable describing the outlet’s market as `Small`, `Medium`, or `Large`. |
-| `Age of Outlets` | Age of the store in years (ranging from 1 to 28).                                     |
+| `Age of Outlets` | Age of the store in months (ranging from 1 to 28).                                     |
 | `Campaigns`      | Categorical variable indicating the type of campaign applied (1, 2, or 3).            |
 | `Week`           | Indicates which of the 4 weeks (1–4) the data point represents.                       |
 | `Sales ('000)`   | Sales revenue in thousands of dollars for a given campaign, store, and week.          |
@@ -47,6 +46,7 @@ This project uses a mix of **exploratory data analysis (EDA)** and **inferential
 * Statistical testing:
 
   * One-Way ANOVA to compare mean sales across campaigns
+  * Independent ttest to compare mean sales across campaigns
   * Tukey's HSD test for pairwise comparison of campaigns
 
 ---
