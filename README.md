@@ -36,10 +36,10 @@ The dataset consists of **548 observations** and the following features:
 
 ### 🔬 Methodology 
 
-**1. Data Preparation and Exploration**
+#### **1. Data Preparation and Exploration**
 The dataset was first imported and inspected using `pandas`. Summary statistics (mean, standard deviation, etc.) were computed for each group (Control, Loyalty Bonus, and Product Discount). Initial visualizations such as **boxplots** and **histograms** were created using `seaborn` and `matplotlib` to understand the distribution and spread of the sales data across groups.
 
-**2. Testing Assumptions for Parametric Tests**
+####  **2. Testing Assumptions for Parametric Tests**
 Before conducting any inferential statistics, two assumptions were checked:
 
 * **a. Normality**:
@@ -48,19 +48,19 @@ Before conducting any inferential statistics, two assumptions were checked:
 * **b. Homogeneity of Variance**:
   **Levene’s test** was performed to verify if the variances across the groups were equal, which is a requirement for ANOVA and t-tests.
 
-**3. One-Way ANOVA (Analysis of Variance)**
+#### **3. One-Way ANOVA (Analysis of Variance)**
 A **one-way ANOVA** was conducted using `statsmodels` to test whether there were significant differences in mean sales across the three marketing campaigns. The ANOVA determines if at least one group mean is different without specifying which.
 
-**4. Independent Samples t-Test (Pairwise Comparison)**
+####  **4. Independent Samples t-Test (Pairwise Comparison)**
 To supplement the ANOVA, **independent t-tests** were conducted between each pair of groups (Control vs Loyalty Bonus, Control vs Product Discount, Loyalty Bonus vs Product Discount). This helped in understanding the **direction and significance** of differences between specific pairs.
 
-**5. Post-Hoc Analysis: Tukey’s HSD**
+####  **5. Post-Hoc Analysis: Tukey’s HSD**
 Since ANOVA indicated a statistically significant difference among groups, a **Tukey’s Honest Significant Difference (HSD)** test was used as a post-hoc analysis. This test allowed multiple pairwise comparisons while controlling for Type I error.
 
-**6. Compact Letter Display (CLD) for Group Comparison**
+#### **6. Compact Letter Display (CLD) for Group Comparison**
 The results of Tukey's HSD were summarized using **Compact Letter Display**. Each group was assigned a letter: groups sharing the same letter are **not significantly different**, while groups with different letters **are statistically distinct**. This visual classification made it easier to interpret results and rank campaign effectiveness.
 
-**7. Interpretation and Business Implication**
+####  **7. Interpretation and Business Implication**
 Finally, a summary table with **mean sales ± standard error**, group letters, and **p-values** was constructed. These results were translated into **business insights**, clearly identifying which campaign performed best and offering recommendations for decision-making.
 
 
