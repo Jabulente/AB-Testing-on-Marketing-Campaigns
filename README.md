@@ -14,18 +14,21 @@ The key objectives of this project are:
 2. **Identify statistically significant differences** in sales using appropriate A/B testing techniques.
 3. **Recommend** the most impactful campaign based on data-driven insights.
 
+
 ## Dataset Description
 
-The dataset consists of **548 observations** and the following features:
+The dataset contains **548 observations** with the following features:
 
-| Column Name    | Description                                                                           |
-| -------------- | ------------------------------------------------------------------------------------- |
-| OutletID       | Unique identifier for store location (total of 137 outlets).                          |
-| Market Size    | Categorical variable describing the outlet’s market as `Small`, `Medium`, or `Large`. |
-| Age of Outlets | Age of the store in years (ranging from 1 to 28).                                    |
-| Campaigns      | Categorical variable indicating the type of campaign applied (1, 2, or 3).            |
-| Week           | Indicates which of the 4 weeks (1–4) the data point represents.                       |
-| Sales ('000')  | Sales revenue in thousands of dollars for a given campaign, store, and week.          |
+| Column Name        | Description                                                                                           |
+| ------------------ | ----------------------------------------------------------------------------------------------------- |
+| **OutletID**       | Unique identifier for each store location (total of 137 outlets).                                     |
+| **Market Size**    | Categorical variable indicating the outlet’s market size: `Small`, `Medium`, or `Large`.              |
+| **Age of Outlets** | Age of the store in years, ranging from 1 to 28.                                                      |
+| **Campaigns**      | Categorical variable specifying the campaign type: Control Group, Loyalty Bonus and Product Discount. |
+| **Week**           | Indicates the week number (1 to 4) the data point corresponds to.                                     |
+| **Sales ('000')**  | Sales revenue in thousands of dollars for the specific campaign, store, and week.                     |
+
+
 
 ## Methodology
 
